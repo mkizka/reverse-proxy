@@ -7,7 +7,9 @@
     }
     servers {
         metrics
-        trusted_proxies static private_ranges
+        # https://caddyserver.com/docs/json/apps/http/servers/trusted_proxies/
+        trusted_proxies cloudflare
+        trusted_proxies static private_ranges # Railwayからのプロキシを信頼する
     }
 }
 
