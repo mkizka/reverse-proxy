@@ -1,3 +1,3 @@
-# unsocial-proxy
+# unsocial-apps
 
-https://github.com/brody192/reverse-proxy から作成
+https://github.com/mkizka/unsocial で使用するDockerイメージ
