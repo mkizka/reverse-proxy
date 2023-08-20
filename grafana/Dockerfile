@@ -1,3 +1,5 @@
 FROM grafana/grafana-oss
+
 USER root
-RUN bash -c "echo 'min_refresh_interval = 100ms' >> /etc/grafana/grafana.ini"
+
+RUN sed -i -e "s/;min_refresh_interval = 5s/min_refresh_interval = 100ms/g" /etc/grafana/grafana.ini
