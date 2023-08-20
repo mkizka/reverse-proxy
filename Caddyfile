@@ -3,16 +3,17 @@
     persist_config off
     auto_https off
     log {
-        format json
+        format console
     }
     servers {
+        metrics
         trusted_proxies static private_ranges
     }
 }
 
 :{$PORT} {
     log {
-        format json
+        format console
     }
     reverse_proxy unsocial.railway.internal:3000
 }
