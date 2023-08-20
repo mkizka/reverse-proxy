@@ -1,5 +1,4 @@
 {
-    admin off
     persist_config off
     auto_https off
     log {
@@ -15,6 +14,5 @@
     log {
         format console
     }
-    metrics /metrics
     reverse_proxy unsocial.railway.internal:3000
 }
