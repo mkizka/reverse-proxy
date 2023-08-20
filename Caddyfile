@@ -15,5 +15,6 @@
     log {
         format console
     }
+    metrics /metrics
     reverse_proxy unsocial.railway.internal:3000
 }
