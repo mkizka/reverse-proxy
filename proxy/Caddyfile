@@ -1,4 +1,5 @@
 {
+    admin :2019
     persist_config off
     auto_https off
     log {
